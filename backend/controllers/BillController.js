@@ -23,9 +23,9 @@ const createBill = asyncHandler(async (req, res) => {
 
 
 
-  // const totalAmount = updatedProducts.reduce((sum, product) => {
-  //   return sum + (product.productPrice * product.productQuantity) + product.taxAmount;
-  // }, 0);
+  const totalAmount = updatedProducts.reduce((sum, product) => {
+    return sum + (product.productPrice * product.productQuantity) + product.taxAmount;
+  }, 0);
 
   
 
